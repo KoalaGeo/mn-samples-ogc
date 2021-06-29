@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="1.3.5">
+<bibdata type="standard">
+<title language="en" format="text/plain">OGC CDB Version 1.1 Release Notes</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/IS/CDB-notes/1.1</docidentifier><docidentifier type="ogc-internal">18-016r1</docidentifier>
+
+<docnumber>18-016r1</docnumber>
+<date type="published">
+<on>2018-12-19</on>
+</date>
+<date type="issued">
+<on>2018-08-27</on>
+</date>
+<date type="received">
+<on>2018-08-02</on>
+</date>
+<contributor>
+<role type="author"/>
+<organization>
+<name>OGC CDB Standards Working Group</name>
+</organization>
+</contributor>
+<contributor>
+<role type="editor"/>
+<person>
+<name>
+<completename>Carl Reed, PhD</completename>
+</name>
+</person>
+</contributor>
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</contributor>
+<edition>1.1</edition>
+
+<language>en</language>
+<script>Latn</script><abstract>
+<p>This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p>
+</abstract>
+<status>
+<stage>approved</stage>
+</status>
+<copyright>
+<from>2018</from>
+<owner>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</owner>
+</copyright>
+<keyword>ogcdoc</keyword>
+<keyword>OGC document</keyword>
+<keyword>CDB</keyword>
+<keyword>Common Data Base</keyword>
+<keyword>simulation</keyword>
+<keyword>synthetic environment</keyword>
+<keyword>version 1.1</keyword>
+<ext>
+<doctype>release-notes</doctype>
+<editorialgroup>
+<committee>technical</committee>
+<workgroup/>
+</editorialgroup>
+</ext>
+</bibdata>
+<boilerplate>
+  <copyright-statement>
+    <clause>
+      <title>Copyright notice</title>
+
+      <p align="center" id="_15496755-6927-4c0e-aef4-9e91e4398d97">Copyright
+        &#169; 2018 Open Geospatial Consortium<br/>
+        To obtain additional rights of use, visit 
+        <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
+    </clause>
+    <clause>
+      <title>Note</title>
+      <p align="left" id="_56d22a41-5634-4c4a-b607-8b362804af08">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+      <p align="left" id="_761f1250-7e62-410d-b705-3a8f88e636f8">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+    </clause>
+  </copyright-statement>
+  <license-statement>
+    <clause>
+      <title>License Agreement</title>
+
+      <p id="_5fd1f855-cbef-43ee-a5f6-924513e386b6">Permission is hereby granted by the Open Geospatial
+        Consortium, (&#8220;Licensor&#8221;), free of charge and subject to the terms set
+        forth below, to any person obtaining a copy of this Intellectual Property and
+        any associated documentation, to deal in the Intellectual Property without
+        restriction (except as set forth below), including without limitation the
+        rights to implement, use, copy, modify, merge, publish, distribute, and/or
+        sublicense copies of the Intellectual Property, and to permit persons to whom
+        the Intellectual Property is furnished to do so, provided that all copyright notices
+        on the intellectual property are retained intact and that each person to whom
+        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+
+      <p id="_48b44db3-79f9-4103-8205-d1ecd2ad6274">If you modify the Intellectual Property, all copies of
+        the modified Intellectual Property must include, in addition to the above
+        copyright notice, a notice that the Intellectual Property includes
+        modifications that have not been approved or adopted by LICENSOR.</p>
+
+      <p id="_50a5b315-247c-44e8-b859-2b7029be070f">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+        THE INTELLECTUAL PROPERTY IS PROVIDED &#8220;AS
+        IS&#8221;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
+        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
+        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
+        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
+        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER&#8217;S OWN RISK. IN NO
+        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
+        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
+        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
+        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
+        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
+        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+
+      <p id="_e89c26f1-2eaa-4de5-b26e-107455282a6d">This license is effective until terminated. You may
+        terminate it at any time by destroying the Intellectual Property together with
+        all copies in any form. The license will also terminate if you fail to comply
+        with any term or condition of this Agreement. Except as provided in the
+        following sentence, no such termination of this license shall require the
+        termination of any third party end-user sublicense to the Intellectual Property
+        which is in force as of the date of notice of such termination. In addition,
+        should the Intellectual Property, or the operation of the Intellectual
+        Property, infringe, or in LICENSOR&#8217;s sole opinion be
+        likely to infringe, any patent, copyright, trademark or other right of a third
+        party, you agree that LICENSOR, in its sole discretion, may terminate this
+        license without any compensation or liability to you, your licensees or any
+        other party. You agree upon termination of any kind to destroy or cause to be
+        destroyed the Intellectual Property together with all copies in any form,
+        whether held by you or by any third party.</p>
+
+      <p id="_7c9d3553-b660-456e-a2d0-06a3a9a70b71">Except as contained in this notice, the name of
+        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
+        Property shall not be used in advertising or otherwise to promote the sale, use
+        or other dealings in this Intellectual Property without prior written
+        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
+        all times be the sole entity that may authorize you or any third party to use
+        certification marks, trademarks or other special designations to indicate
+        compliance with any LICENSOR standards or specifications.
+        This Agreement is
+        governed by the laws of the Commonwealth of Massachusetts. The application to
+        this Agreement of the United Nations Convention on Contracts for the
+        International Sale of Goods is hereby expressly excluded. In the event any
+        provision of this Agreement shall be deemed unenforceable, void or invalid, such
+        provision shall be modified so as to make it valid and enforceable, and as so
+        modified the entire Agreement shall remain in full force and effect. No
+        decision, action or inaction by LICENSOR shall be construed to be a waiver of
+        any rights or remedies available to it.</p>
+
+      <p id="_bdf32f02-45bb-48a4-8b9e-c79e1d336df7">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+    </clause>
+  </license-statement>
+
+  <legal-statement>
+    
+    <clause>
+      <title>Warning</title>
+      <p id="_e2d229ce-067f-4775-b20a-0aec9db5b0eb">This document is not an OGC standard. This document provides release notes for an OGC standard. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+      <p id="_c8bd31df-6b9b-4f44-8828-f02d254008fe">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+
+    </clause>
+
+    
+
+  </legal-statement>
+
+
+
+
+  <feedback-statement>
+    
+  </feedback-statement>
+</boilerplate>
+<preface><abstract id="_abstract"><title>Abstract</title>
+<p id="_3c5bd07c-12ff-44a1-ba85-ac1327ac3cc1">This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p>
+</abstract><clause type="security" id="_a95a489e-0441-44e4-a5bb-9010c88a5936" obligation="informative"><title>Security Considerations</title><p id="_9c1587d2-9a2e-4019-86ea-ae553287a06a">No security considerations have been made for this document.</p></clause><submitters id="_submitters">
+<title>Submitters</title>
+<table id="_c217652c-9674-4f3a-9658-1e721c69cd76" unnumbered="true">
+<thead>
+<tr>
+<th valign="top" align="left">Name</th>
+<th valign="top" align="left">Affiliation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td valign="top" align="left">Carl Reed</td>
+<td valign="top" align="left">Carl Reed &amp; Associates (Editor)</td>
+</tr>
+<tr>
+<td valign="top" align="left">David Graham</td>
+<td valign="top" align="left">CAE Inc. CDB Chair</td>
+</tr>
+</tbody>
+</table>
+</submitters></preface><sections>
+
+<clause id="_revisions_to_volume_1_cdb_core_model_and_physical_data_store" obligation="normative"><title>Revisions to Volume 1: CDB Core Model and Physical Data Store</title><clause id="_introductory_clause_future_work" obligation="normative">
+<title>Introductory Clause &#8220;Future Work&#8221;</title>
+<p id="_3f5f6c56-40f0-4632-a288-92d401a6cb55">Updated to reflect work done in CDB version 1.1 as well as new requirements identified in OGC Testbed 13.</p>
+</clause>
+<clause id="_1_0_1_corrigendum_changes_included" obligation="normative">
+<title>1.0.1 Corrigendum changes included</title>
+<p id="_eaf2389a-e1ea-40b5-a0f9-634b4c4ab9df">All CDB 1.0.1 Corrigendum changes incorporated. See OGC document 17-064 Summary of Corrigendum Changes for CDB Volume1: Core.</p>
+</clause>
+<clause id="_general_change_all_file_extensions_in_requirements_are_now_generic" obligation="normative"><title>General Change: All file extensions in Requirements are now generic</title><p id="_7d3c93ba-7759-40a1-a49e-10dadbc14e53">All file specific extensions stated in requirements have been made generic. For example, CDB Volume 1 Requirement formerly stated:</p>
+<p id="_d7251114-dab4-44e3-a255-29ec006eb270">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.flt</tt>.</p>
+<p id="_be1b32ad-4182-427f-b0ab-dcd7a994fbdd">This Requirement now reads:</p>
+<p id="_9399662a-0e28-469a-9226-8efc9d755ea4">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.&lt;ext&gt;</tt></p>
+<p id="_4a53fbf9-fa33-4570-8591-d9429bebe2ca">Where <tt>&lt;ext&gt;</tt> is the correct file name extension for the data encoded in the file. There is also a footnote that specifies what the extension was in version 1.0 of the CDB standard.</p></clause>
+<clause id="_clause_1_4_3_cdb_metadata" obligation="normative"><title>Clause 1.4.3 CDB Metadata</title><p id="_f4faf4d2-7301-4854-bd2d-47253e0f4186">This clause was updated to:</p>
+<ul id="_2034bf21-f319-4372-be8b-8a88be572f97">
+<li>
+<p id="_e393ddfb-a5c7-4a5d-80da-5e1c4e7ff1ba">Provide definitions for metadata, controlled vocabularies, and enumerations. These are in clauses 1.4.3.1, 1.4.3.2, and 1.4.3.3.</p>
+</li>
+<li>
+<p id="_8f8de050-eb4b-4558-a9e6-1937fbf1c66d">Insert a table that provides more detailed information on each of the files included in the metadata folder.</p>
+</li>
+</ul></clause>
+<clause id="_clause_1_4_4_cdb_directory_file_naming_and_structure" obligation="normative"><title>Clause 1.4.4 CDB Directory File Naming and Structure</title><p id="_a029e3e3-aa55-4e4e-8e06-02e202c70418">This clause is updated to:</p>
+<ul id="_67933b82-4f97-43d9-b302-49973f6c6a0f">
+<li>
+<p id="_07a41026-51b9-4a26-9ae8-a81d4f571e3a">Reflect the use of generic file extensions in all Requirements and the Abstract Test Suite rather than specific file extensions.</p>
+</li>
+<li>
+<p id="_980cb7c7-8b1b-4275-8a8d-be7bcbe99a0f">Reflect the addition of enumerations and controlled vocabularies as concepts in the standard.</p>
+</li>
+</ul></clause>
+<clause id="_clause_1_7_1_4_system_hardware_independence" obligation="normative">
+<title>Clause 1.7.1.4 System Hardware Independence</title>
+<p id="_77adb38f-d085-4857-b946-26e920f450f1">Slight re-wording to make the sentence grammatically correct.</p>
+</clause>
+<clause id="_clause_3_1_1_metadata_directory" obligation="normative">
+<title>Clause 3.1.1 Metadata Directory</title>
+<p id="_68a7fd7d-f391-4337-890f-e57f135dffa1">Reformatted to be more easily read and understood.</p>
+</clause>
+<clause id="_clause_3_1_1metadata_directory" obligation="normative">
+<title>Clause 3.1.1Metadata Directory</title>
+<p id="_b40b58f8-89f1-4436-aba6-92b63be94bdd">A new metadata file description for global metadata &#8211; including geospatial metadata -applicable to an entire CDB data store was added. This new metadata file description needs to be read in concert with the changes in clauses 1.4.3, 5.1, and specifically 5.1.6.</p>
+</clause>
+<clause id="_clause_3_4_2_4_examples" obligation="normative">
+<title>Clause 3.4.2.4 Examples</title>
+<p id="_c1b1bdc4-6f30-4c60-8f7c-f9cd99f59b79">An example of the file path for all associated metadata is included.</p>
+</clause>
+<clause id="_clause_3_4_4_3_examples" obligation="normative">
+<title>Clause 3.4.4.3 Examples</title>
+<p id="_98d76d9f-9c97-46d9-97f8-1dd584870ac4">An example of the file path for all associated metadata is included.</p>
+</clause>
+<clause id="_clause_3_4_4_4_examples" obligation="normative">
+<title>Clause 3.4.4.4 Examples</title>
+<p id="_568dfacf-0c82-48be-8476-113a11157d34">An example of the file path for all associated metadata is included.</p>
+</clause>
+<clause id="_clause_3_4_5_2_examples" obligation="normative">
+<title>Clause 3.4.5.2 Examples</title>
+<p id="_a6a22d55-7bcb-4c92-a450-eefc0ce4e716">An example of the file path for associated metadata is included.</p>
+</clause>
+<clause id="_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies" obligation="normative">
+<title>Clause 5.1 enhanced to include discussion of Controlled Vocabularies</title>
+<p id="_9044fe9c-086f-4ffd-ab44-5f4d6abd9db5">Clause 5.1 has additional wording explaining CDB use of metadata, enumerations and controlled vocabularies. This change resulted from the work in CDB 1.1 for metadata. Many elements in CDB 1.0 that were referred to as metadata are actually enumerations and controlled vocabularies.</p>
+</clause>
+<clause id="_clause_5_1_1_global_metadata" obligation="normative">
+<title>Clause 5.1.1 Global Metadata</title>
+<p id="_fda9144c-3bab-42a6-ba81-64d62de5dd99">A new clause added that defines what is meant by Global Metadata in general for a CDB data store.</p>
+</clause>
+<clause id="_clause_5_1_2_local_metadata" obligation="normative">
+<title>Clause 5.1.2 Local Metadata</title>
+<p id="_8e17580e-01d5-445d-b414-5bdfc9ca4f39">A new clause added that defines what is meant by Local Metadata for a CDB data store.</p>
+</clause>
+<clause id="_clause_5_1_8_formerly_clause_5_1_6_version_metadata" obligation="normative"><title>Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</title><p id="_4ddb1a1f-95a1-4eff-ac6b-1756df3eb280">Specification version definition enhanced to include both OGC and community versions of the standard.</p>
+<p id="_9fdecb72-edec-47b4-a312-996a9de1a33f">Addition of a mandatory <tt>&lt;Metadata standard="metadata-standard-name"&gt;</tt> element that specifies the metadata standard used for a CDB data store. This includes a list of metadata standards commonly used in the geospatial and simulation industries. This enumeration is governed by and agreed to by the OGC CDB Standards Working Group. Other metadata standards or profiles of standards may be added upon request and with proper justification. For backwards compatibility, the Metadata_standard element can be set to &#8220;NoMetadata&#8221;.</p></clause>
+<clause id="_clause_5_1_12_geospatial_metadata_guidance" obligation="normative">
+<title>Clause 5.1.12 Geospatial Metadata Guidance</title>
+<p id="_e7c83d4f-1eb2-42e9-bbc2-cbbbb2241952">This is a new clause that provides general implementation guidance for encoding and storing metadata in a CDB data store.</p>
+</clause>
+<clause id="_clause_5_1_12_1_suggested_global_geospatial_metadata_elements" obligation="normative">
+<title>Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</title>
+<p id="_3ab27f5a-8638-4d37-9d2d-140aaba33a3c">This is a new clause that provides guidance on which metadata elements should be included in the global metadata resource.</p>
+</clause>
+<clause id="_clause_5_1_12_2_suggested_local_geospatial_metadata_elements" obligation="normative">
+<title>Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</title>
+<p id="_34cc2f65-b99f-481e-9c72-cb320ec94775">This is a new clause that provides guidance on which metadata elements should be included in a local metadata resource.</p>
+</clause>
+<clause id="_clause_5_6" obligation="normative">
+<title>Clause 5.6</title>
+<p id="_7a30bbcb-771d-4951-8655-4caa050101e2">Cross walked the CDB tiled grid concept with the OGC/ISO baseline, specifically the OGC Coverage Implementation Schema (CIS) September 2017.</p>
+</clause>
+<clause id="_clause_5_6_2_3_2_vsti_default_read_value_change_request_490" obligation="normative"><title>Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</title><p id="_97695f6c-10cb-47ff-a416-ef1c6f9148ae">Requirement 102 is against CDB client-devices and not the CDB data store itself. This is an untestable requirement, and further, a client-device should be allowed to read and consume a CDB in any manne that it wishes. There might well be good reasons to not follow those rules in a client-device, so the spec should not impose this.</p>
+<p id="_85eac857-4b5f-4bd3-abe9-70c14f7fe6f0">Therefore, this requirement was removed and replaced with informative guidance for client implementations. The related test 102 is removed from Annex A&#8201;&#8212;&#8201;Abstract Test Suite.</p></clause>
+<clause id="_new_clause_5_7_1_6_4_network_vector_priority" obligation="normative">
+<title>New Clause: 5.7.1.6.4 Network Vector Priority</title>
+<p id="_18f60087-3658-4802-8b92-dac301604b9c">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for network vector priority. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1.</p>
+</clause>
+<clause id="_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria" obligation="normative">
+<title>New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</title>
+<p id="_b18f71b8-893b-4948-beec-9340423f093e">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for vector significant size and spatial significance. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1. Clause 5.7.1.9 includes two sub-clauses: 5.7.1.9.1 Vector Significant Size and 5.7.1.9.2 Levels of Detail and Spatial Significance Criteria.</p>
+</clause>
+<clause id="_annex_a_abstract_test_suite" obligation="normative">
+<title>Annex A: Abstract Test Suite</title>
+<p id="_6952c8ac-bd3d-4597-9d1e-23f719e72576">All tests that had specific file extensions, such as .shp or .flt, are now generic with a note as to what the extensions were in version of the CDB standard prior to version 1.1.</p>
+</clause>
+<clause id="_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata" obligation="normative">
+<title>Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</title>
+<p id="_0faf5bf3-5534-41d8-a78e-209cf4c17b13">A new selector value &#8220;12&#8221; for global metadata was added.</p>
+</clause>
+<clause id="_table_5_9_component_selectors_for_gtmodel_datasets" obligation="normative">
+<title>Table 5-9: Component Selectors for GTModel Datasets</title>
+<p id="_25d3ea38-961b-48f1-aac3-17794f5ffe0b">Provide correct volume and section reference to GTModel descriptor definition. Please note, while this descriptor content is called metadata, this IS NOT the metadata as defined in Volume 1 clauses 5.1.1 and 5.1.2.</p>
+</clause>
+<clause id="_figure_5_25_two_instances_of_code_65" obligation="normative"><title>Figure 5-25. Two instances of code 65</title><p id="_6d0afcaa-9dd4-4941-9227-b6da44ac4d70">After verification with the reference document, the correct lines are:</p>
+<ul id="_7b9430e0-16fe-463d-8f48-322ae2641f13">
+<li>
+<p id="_46992ef8-1beb-445a-a8c0-025994472e2d"><tt>64</tt>: Gable with Monitor</p>
+</li>
+<li>
+<p id="_2e08364e-cb75-4e60-b20a-dcf3861dcde1"><tt>65</tt>: Reserved</p>
+</li>
+</ul>
+<p id="_6ca280f8-5462-42e7-87cb-a120f46534db">The reference document is Digest Part 4, ISO 15046-10 Profile, March 1999, Annex B, Attribute and Value Codes.</p></clause>
+<clause id="_table_5_27_use_of_d_has_two_meanings_change_request_471" obligation="normative">
+<title>Table 5-27 Use of &#8220;D&#8221; has two meanings. (Change Request 471)</title>
+<p id="_056638d6-27aa-486d-b211-220b5a0c839f">There was recommendation to remove the use of &#8220;D&#8221; indicating a &#8220;Deprecated Attribution Schema&#8221; and keep just one use of &#8220;D&#8221; for &#8220;Dependent on another attribute&#8221;. This recommendation was accepted and the change made to Table 5-27.</p>
+</clause>
+<clause id="_table_5_27_not_entirely_visible_change_request_481" obligation="normative">
+<title>Table 5-27 not entirely visible (Change Request 481)</title>
+<p id="_86a1fbac-c0e0-4137-8363-bf5c7746e53f">In version 1.0, Table 27 is not entirely visible (clipped at page edge). This comment was accepted and the change made to the table prior to insertion into Volume 1 Core.</p>
+</clause>
+<clause id="_cdb_attributes_xml_schema_error_change_request_482" obligation="normative"><title>CDB_Attributes.xml Schema error (Change Request 482)</title><p id="_248d4ec7-da4d-4f15-b502-20dd69478009">In: <tt>CDB_Attributes.xml</tt></p>
+<sourcecode lang="xml" id="_95499991-52ca-4c6a-96e5-f175d2d93cc6" unnumbered="true">No.:9
+Attr short name:BOTY
+Attr name: Boundary Type
+Description: "...See table 5-29 for a list of accepted values..."</sourcecode>
+
+<p id="_0148aaca-fd94-4442-8abb-229722b50679">The table 5-29 was corrected to be 5-19.</p></clause></clause>
+<clause id="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes" obligation="normative"><title>Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</title><clause id="_annex_q_table_of_dataset_codes" obligation="normative">
+<title>Annex Q: Table of Dataset Codes</title>
+<p id="_5d27edac-346e-43c7-a7a3-e96cd92f9e70">Updated to reflect the relationship between the community CDB 3.2 version and the OGC standard.</p>
+</clause>
+<clause id="_annex_r_derived_datasets_within_the_cdb" obligation="normative">
+<title>Annex R: Derived Datasets within the CDB</title>
+<p id="_4799ad48-6ed8-4308-a486-d3ac5089548d">Some grammatical errors were corrected.</p>
+</clause></clause>
+<clause id="_revisions_to_volume_3_terms_and_definitions" obligation="normative">
+<title>Revisions to Volume 3 Terms and Definitions</title>
+<p id="_9d2cf788-ff33-474d-bfe0-24c2fbf833b9">Definitions were added for: depth, elevation, grid, grid point, height, metadata elements, raster, regular grid, and vector data. The definitions for dataset and metadata were slightly revised</p>
+</clause>
+<clause id="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage" obligation="normative"><title>Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</title><clause id="_general" obligation="normative">
+<title>General</title>
+<p id="_3612c700-f0b8-4e00-9a33-864d8add8f75">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</clause>
+<clause id="_clause_1_scope" obligation="normative">
+<title>Clause 1: Scope</title>
+<p id="_27a25b7e-bcf9-421c-a35f-5499b1da9105">The use of the word &#8220;standard&#8221; replaced with &#8220;Best Practice&#8221;.</p>
+</clause>
+<clause id="_clause_3_references" obligation="normative">
+<title>Clause 3: References</title>
+<p id="_a809eb06-e976-44fd-8ac1-dd7ed34eb56a">Proper reference to the Esri ShapeFile technical document was added.</p>
+</clause>
+<clause id="_clause_4_terms_and_definitions" obligation="normative">
+<title>Clause 4: Terms and Definitions</title>
+<p id="_edb7322e-a5df-435b-b538-fe2e6cfd6cb0">This clause was reworded and URL to the CDB standard was added.</p>
+</clause></clause>
+<clause id="_revisions_to_volume_5_radar_cross_sections" obligation="normative"><title>Revisions to Volume 5: Radar Cross-Sections</title><clause id="_general_2" obligation="normative">
+<title>General</title>
+<p id="_058b553f-c364-48a2-8280-54d5aa5f7b5c">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</clause>
+<clause id="_clause_4_terms_and_definitions_2" obligation="normative">
+<title>Clause 4 Terms and Definitions</title>
+<p id="_7cfa4dcc-9317-4be2-a8e0-cd6669c5f4af">The correct URL to the CDB standard was inserted.</p>
+</clause></clause>
+<clause id="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp" obligation="normative"><title>Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</title><clause id="_general_3" obligation="normative">
+<title>General</title>
+<p id="_1bef36bd-fade-4df7-a0ce-aed07a463622">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</clause>
+<clause id="_clause_5_1_identifiers" obligation="normative">
+<title>Clause 5.1 Identifiers</title>
+<p id="_1147e59a-01d0-4b13-9b99-2734ce8b1640">URI base updated to reflect version 1.1.</p>
+</clause>
+<clause id="_requirement_class_metadata" obligation="normative">
+<title>Requirement Class Metadata</title>
+<p id="_02da25ac-f513-494e-aaf2-79c60bbfacb3">This requirement class was updated to consistent with Requirement 1 (/req/core/openflight/headercrs).</p>
+</clause></clause>
+<clause id="_revisions_to_volume_7_ogc_cdb_data_model_guidance" obligation="normative"><title>Revisions to Volume 7 OGC CDB Data Model Guidance</title><p id="_fb9f0304-a461-416f-ac06-6705ddab4609">Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.</p>
+<p id="_369b5b41-1129-430d-bb2c-82c665eb2e7c">Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.</p>
+<clause id="_6_5_3_access_of_a_model_interior" obligation="normative">
+<title>6.5.3 Access of a Model Interior</title>
+<p id="_19d1ae57-5512-48d6-ab5e-e31b1cbf86a6">This section has minor changes to make wording on the use of OpenFlightgeneric and in line with the changes in CDB Volume 1.</p>
+</clause>
+<clause id="_section_6_13_1_linear_feature_radar_simulation_example" obligation="normative">
+<title>Section 6.13.1 Linear Feature Radar Simulation Example</title>
+<p id="_eb06f4d1-fcb5-42ea-9ca7-084e24899171">This section has minor changes to make wording on the use of ShapeFiles generic and consistent with the changes in CDB Volume 1.</p>
+</clause>
+<clause id="_new_section_added_6_14_guideline_vector_priority_tile_lod_generation" obligation="normative">
+<title>New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</title>
+<p id="_dec15e71-b8e7-4458-9e50-c49cd56e8624">After CDB was submitted to the OGC, the CDB user community added a new Annex A sub-clause to clarify rules for vector priority in the LoD/Tile structure. This CDB user community approved clause is now incorporated in Volume 7 of the OGC CDB standard, version 1.1.</p>
+</clause></clause>
+<clause id="_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance" obligation="normative">
+<title>Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</title>
+<clause id="_clause_4_terms_and_definitions_3" obligation="normative">
+<title>Clause 4 Terms and Definitions</title>
+<p id="_80ee341e-cbaa-434e-b303-671dca332f0e">The correct URL to the CDB standard was inserted.</p>
+</clause>
+</clause>
+<clause id="_revisions_to_volume_10_cdb_implementation_guidance" obligation="normative"><title>Revisions to Volume 10: CDB Implementation Guidance</title><clause id="_general_4" obligation="normative">
+<title>General</title>
+<p id="_782ba056-ffeb-4e4c-8972-dbd3b9fbf5a3">Comments (artifacts) for version 1.0 were removed.</p>
+</clause>
+<clause id="_clause_4_terms_and_definitions_4" obligation="normative">
+<title>Clause 4 Terms and Definitions</title>
+<p id="_8b1e6022-a04a-4672-89df-e21551863641">The correct URL to the CDB standard was inserted. Additional abbreviations were added.</p>
+</clause>
+<clause id="_clause_5_platform_recommendations" obligation="normative">
+<title>Clause 5: Platform Recommendations</title>
+<p id="_5d7d5889-f92d-4079-bd9d-aefb9eea0e82">Correct grammatical errors.</p>
+</clause></clause>
+<clause id="_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values" obligation="normative">
+<title>Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</title>
+<clause id="_abstract_2" obligation="normative">
+<title>Abstract:</title>
+<p id="_99aba3da-ba75-45ce-8dd1-d807456f65a4">Slight re-wording of the abstract</p>
+</clause>
+</clause></sections>
+</ogc-standard>

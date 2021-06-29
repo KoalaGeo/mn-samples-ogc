@@ -1,0 +1,123 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/10-091r3/document.err errors
+
+
+== Style
+
+(): Submitters is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000099): Table should have title
+	<table id="_d7c3db20-8d92-4d11-9925-33b8eff33e44" unnumbered="true">
+	<tbody>
+	<tr>
+	<th valign="top" align="left">Name</th>
+	<th valign="top" align="left">Organization</th>
+(XML Line 000155): Hanging paragraph in clause
+	<clause id="_conventions" obligation="normative"><title>Conventions</title><clause id="_uml_notation" obligation="normative">
+	<title>UML notation</title>
+	<p id="_57076d24-cde2-4337-a881-6152cb5c48cf">All the diagrams that appear in this specification are presented using the Unified Modeling Language (UML) static structure diagram, as described in Subclause 5.2 of OGC Web Services Common <eref type="inline" bibitemid="ogc06-121r3" citeas="OGC 06-121r3"/>.</p>
+	</clause>
+	<clause id="_namespace_prefix_conventions" obligation="normative">
+(XML Line 000163): Hanging paragraph in clause
+	<clause id="package_overview" obligation="normative"><title>CF-netCDF Package Overview</title><clause id="_core_and_extensions" obligation="normative"><title>Core and extensions</title><p id="_57011a8b-ec96-44da-ad1d-eaa14711ba81">Based on the CF-netCDF model defined in this document and the NetCDF Classic core data model specification, many extension packages are conceivable which:</p>
+	<ul id="_44dcdf81-0e6e-4c66-85c6-0ec763654b3f">
+	<li>
+	<p id="_b3923759-672f-4a85-bdc5-419fdcb1ae61">add specific functionality to the NetCDF classic data model and encoding, or</p>
+	</li>
+(XML Line 000193): Hanging paragraph in clause
+	<clause id="possible_extensions" obligation="normative"><title>Possible extensions</title><p id="_c148ee67-ad09-4d28-8b89-2366dc862062">In this section, several CF-netCDF extensions are listed which have been discussed by the CF-netCDF Working Group in the course of developing the CF-netCDF specification. Some of them are already available as adopted or proposed specifications by other groups (NASA and NOAA in particular), but nearly all of them are available as part of the netCDF packages which have been implemented and used widely for decades. The CF conventions are in fact a separate entity, but they too evolved as part of the netCDF community of practice and were initially implemented for use with netCDF. By no means is this list prescriptive or comprehensive; some extensions listed here may never be written, and others not listed at this time may be added and developed later.</p>
+	<p id="_15f36acc-b0be-4fff-ab49-e855d99a6faa">Following the presentation in <xref target="package_overview"/>, extensions are grouped into abstract classes:</p>
+	<ul id="_8353ae1e-7927-43d8-825f-938550e15bea">
+	<li>
+	<p id="_9ae40ca0-57fd-423f-9518-33f64a47fb3a">Data model extensions: they extend or refine data structures;</p>
+(XML Line 000213): Hanging paragraph in clause
+	<clause id="_data_model_extensions" obligation="normative"><title>Data model extensions</title><clause id="_purpose" obligation="normative">
+	<title>Purpose</title>
+	<p id="_e193d9aa-fa8c-4bfd-9989-4513f59393e5">This category of extensions focuses on adding information content to the netCDF dataset model.</p>
+	</clause>
+	<clause id="_identification" obligation="normative"><title>Identification</title><p id="_1bfc0099-c945-4907-8d85-bc0813af64ef">The netCDF core specification and each CF-netCDF extension is identified by a unique HTTP URI which, by convention, is specified in the first formal requirement of an extension specification.</p>
+(XML Line 000223): Hanging paragraph in clause
+	<clause id="_list_of_extensions" obligation="normative">
+	<title>List of extensions</title>
+	<clause id="_enhanced_netcdf_data_model" obligation="normative"><title>Enhanced netCDF data model</title><p id="_14afae92-d423-4d84-aca4-6ea0b9157c23">The netCDF classic data model has been extended by an enhanced model that includes “groups,” an expanded list of primitive data types, and a provision for user defined data types.</p>
+	<p id="_8b662cd7-066a-4399-ae60-aec0b93b7116">
+	<link target="http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#Data-Model"/>
+(XML Line 000225): Hanging paragraph in clause
+	<clause id="_enhanced_netcdf_data_model" obligation="normative"><title>Enhanced netCDF data model</title><p id="_14afae92-d423-4d84-aca4-6ea0b9157c23">The netCDF classic data model has been extended by an enhanced model that includes “groups,” an expanded list of primitive data types, and a provision for user defined data types.</p>
+	<p id="_8b662cd7-066a-4399-ae60-aec0b93b7116">
+	<link target="http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#Data-Model"/>
+	</p>
+	<clause id="_other_data_model_extensions" obligation="normative">
+(XML Line 000234): Hanging paragraph in clause
+	<clause id="_conventions_extensions" obligation="normative"><title>Conventions extensions</title><clause id="_purpose_2" obligation="normative"><title>Purpose</title><p id="_9bacd4df-d1b3-4ec5-bef3-d841e724c643">This category of extensions describes conventions that may constrain the general netCDF data model. Many netCDF conventions have been defined for use in a diverse set of disciplines. Among them are:</p>
+	<ul id="_05ec6477-3b77-42d6-86d9-bf383211a660">
+	<li>
+	<p id="_f7d42604-694c-420b-8fe8-19c5905ba501">CF Conventions <em>(Recommended, if applicable)</em></p>
+	</li>
+(XML Line 000264): Hanging paragraph in clause
+	<clause id="_list_of_extensions_2" obligation="normative"><title>List of extensions</title><p id="_cb928392-bbd2-4d8f-b8f8-b3d43e448829">While it is important to be aware of the fact that many netCDF conventions exist, the initial focus of the CF-netCDF SWG is on the conventions for Climate and Forecast (CF) metadata.</p>
+	<clause id="_cf_conventions" obligation="normative"><title>CF conventions</title><p id="_ef3c5593-0ac3-4830-9b42-92c4eb986c7e">The conventions for climate and forecast (CF) metadata are designed to promote the processing and sharing of files created with the NetCDF API. The conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data. This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities.</p>
+	<p id="_f9e5b7b2-8352-4190-aa6f-cf166b057767">CF Conventions<br/>
+	<link target="http://www.cfconventions.org"/></p>
+	<p id="_0ca12ef8-d5c8-4e22-9f84-f01b0102d94a">Proposed NASA CF Standard:<br/>
+(XML Line 000274): Hanging paragraph in clause
+	<clause id="_binary_encoding_extensions" obligation="normative"><title>Binary encoding extensions</title><clause id="_purpose_3" obligation="normative">
+	<title>Purpose</title>
+	<p id="_171846ae-80ea-48ac-a9b3-1971b07120b2">This category of extension describes the structure of the encoded datasets.</p>
+	</clause>
+	<clause id="_list_of_extensions_3" obligation="normative"><title>List of extensions</title><p id="_2f64f6c1-3588-476f-8445-5a3fd686165d">NetCDF encoding formats are defined in format encoding extensions. Some of these encodings are binary and are to be specified in extensions to the netCDF core.</p>
+(XML Line 000278): Hanging paragraph in clause
+	<clause id="_list_of_extensions_3" obligation="normative"><title>List of extensions</title><p id="_2f64f6c1-3588-476f-8445-5a3fd686165d">NetCDF encoding formats are defined in format encoding extensions. Some of these encodings are binary and are to be specified in extensions to the netCDF core.</p>
+	<p id="_0831a80c-82d6-4a53-8f1d-178f11eb7688">Unidata netCDF encoding documentation<br/>
+	<link target="http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#Classic-File-Parts"/></p>
+	<clause id="_netcdf_classic_and_64_bit_offset_binary_encoding_formats" obligation="normative"><title>NetCDF classic and 64-bit offset binary encoding formats</title><p id="_62901440-cdb7-4bc9-be30-a666cf5bedc0">In particular, the first extension is to be the NetCDF Classic and 64-bit Offset File Formats which have been previously adopted as a NASA Standard:</p>
+	<p id="_4ac03d72-2ecb-44d7-9634-1034690f2d76">NASA Standard: NetCDF Classic and 64-bit Offset File Formats<br/>
+(XML Line 000291): Hanging paragraph in clause
+	<clause id="_xml_encoding_extensions" obligation="normative"><title>XML encoding extensions</title><clause id="_purpose_4" obligation="normative">
+	<title>Purpose</title>
+	<p id="_11fbb43c-3c8a-4fff-9e07-1117aa6f8a41">XML encoding extensions can serve several purposes. The entire contents of a netCDF dataset can be encoded in dialects of XML. But XML dialects can also be used to augment the metadata associated with a binary encoded netCDF dataset. It can also be used to define virtual datasets that consist of aggregations of data that exist in multiple netCDF binary files.</p>
+	</clause>
+	<clause id="_list_of_extensions_4" obligation="normative">
+(XML Line 000299): Hanging paragraph in clause
+	<clause id="_ncml" obligation="normative"><title>NcML</title><p id="_e34cf6d2-4f93-4580-b8fe-4ce1b9f19c21">NcML Documentation<br/>
+	<link target="http://www.unidata.ucar.edu/software/netcdf/ncml/"/></p>
+	<p id="_b6a15595-ecea-4897-af76-c513e8079386">NcML is an XML representation of netCDF metadata, (approximately) the header information one gets from a netCDF file with the “ncdump -h” command. NcML is similar to the netCDF CDL (network Common data form Description Language), except, of course, it uses XML syntax. The simplest use of NcML is to describe the metadata and structural content of a netCDF file. A more advanced use is to modify existing NetCDF files, as well as to create “virtual” NetCDF datasets, for example through aggregation.</p>
+	<clause id="_ncml_gml" obligation="normative"><title>NcML-GML</title><p id="_5ee2a8bb-79cb-4c72-923c-3914f2f641e4">NcML-GML is:</p>
+	<ul id="_88f5b40b-a30e-48d4-a3a4-705e4cc3d598">
+(XML Line 000317): Hanging paragraph in clause
+	<clause id="_text_encoding" obligation="normative"><title>Text encoding</title><clause id="_purpose_5" obligation="normative">
+	<title>Purpose</title>
+	<p id="_036ac25e-6feb-461a-907f-36153084419e">It is often useful to represent the contents of a netCDF file or just the header metadata information in a simple, east for humans to read, text form.</p>
+	</clause>
+	<clause id="_list_of_extensions_5" obligation="normative">
+(XML Line 000321): Hanging paragraph in clause
+	<clause id="_list_of_extensions_5" obligation="normative">
+	<title>List of extensions</title>
+	<clause id="_cdl_network_common_data_form_description_language" obligation="normative"><title>CDL (network Common data form Description Language)</title><p id="_ef1ddfff-fdf9-41ff-a2f3-ac764202d5f4">CDL (network Common data form Description Language) is a tiny language that makes it possible to represent either the metadata or the entire contents of a netCDF dataset in an intuitive, easily understandable textual form.</p>
+	<p id="_dc4f9250-614b-4d4e-b89c-8dea98ac926a">CDL syntax is described at:<br/>
+	<link target="http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#CDL-Syntax"/></p></clause>
+(XML Line 000327): Hanging paragraph in clause
+	<clause id="_application_programming_interfaces_apis" obligation="normative"><title>Application Programming Interfaces (APIs)</title><clause id="_purpose_6" obligation="normative">
+	<title>Purpose</title>
+	<p id="_5b6a2444-0744-454f-bb6e-7a750f1df87e">The powerful but relatively simple netCDF APIs are often cited at a primary reason for the wide adoption and usage of netCDF. For that reason, they are seen as a facilitator of interoperability of data systems within the community. Because of that, there have been suggestions that establishing the most commonly used APIs as a standard would greatly benefit interoperability in a wider community. Hence, they are included here as future possibilities, but are not the initial focus of the CF-netCDF SWG.</p>
+	</clause>
+	<clause id="_list_of_extensions_6" obligation="normative"><title>List of extensions</title><clause id="_c_language" obligation="normative">
+(XML Line 000331): Hanging paragraph in clause
+	<clause id="_list_of_extensions_6" obligation="normative"><title>List of extensions</title><clause id="_c_language" obligation="normative">
+	<title>C language</title>
+	<p id="_cba9c2c6-bb88-4b63-bb6a-43f89ec781df">The netCDF C Interface Guide:<br/>
+	<link target="http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-c.html#Top"/></p>
+	</clause>
+(XML Line 000431): Table should have title
+	<table id="_fab15b6a-9604-4314-93ae-e831716f68c3" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="middle" align="center">Date</th>
+	<th valign="middle" align="center">Release</th>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000082:34): multiple definitions of "DocumentSubtype" without "combine" attribute

@@ -1,0 +1,143 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/10-100r3/document.err errors
+
+
+== Style
+
+(): Abstract is missing!
+(): Keywords are missing!
+(): Submitters is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000141): Table should have title
+	<table id="_79d26e8c-495f-474e-aed9-b0867e0bd551" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Contact</th>
+	<th valign="top" align="left">Company</th>
+(XML Line 000343): Hanging paragraph in clause
+	<clause id="conformance" type="conformance" obligation="normative"><title>Conformance</title><clause id="_intruduction" obligation="normative"><title>Intruduction</title><p id="_e3486d96-6e34-4902-b57a-1abcd9a04a53">This document defines three compliance levels called SF-0, SF-1, and SF-2.</p>
+	<p id="_da1f026c-7283-4931-bf7d-1b5a418774bb">Compliance level SF-0 limits the property types of both spatial and non-spatial properties. Non-spatial properties are limited to being of type: integer, measurement, date, boolean, binary, URI, character or real; and cardinality of non-spatial properties is limited to at most one. Spatial properties are limited to being of type: point, curve with linear and/or circular arc interpolation, planar surface, or aggregates thereof. In GML instance documents compliant with level SF-0, values for a particular property may be encoded inline or by-reference but not both. By-reference property values are only supported through the use of the type gml:ReferenceType. The more generalized GML property-type pattern allowing mixed inline and by-reference encoded property values within the same instance document is disallowed in this level. Compliance level SF-1 supports everything in compliance level SF-0 but removes the restriction on value cardinality and allows user defined non-spatial property types to be used. As with compliance level SF-0, in GML instance documents compliant with level SF-1, values for a particular property may be encoded inline or by-reference but not both. By-reference property values are only supported through the use of the type gml:ReferenceType. The more generalized GML property-type pattern allowing mixed inline and by-reference encoded property values within the same instance document is disallowed in this level.</p>
+	<p id="_17e24738-440c-4920-99bd-6e8771552144">Finally, compliance level SF-2 essentially corresponds to the OGC Simple Features specification [1]. There are no restrictions placed on non-spatial properties. Spatial properties, however, are limited to the set of geometric types supported by compliance levels SF-0 and SF-1. In instance documents, the restriction on remote or referenced geometric property values, found in compliance levels SF-0 and SF-1, is removed.</p>
+	<p id="_0d36735b-11a5-4ae9-9669-481b5a48f1ed">The rationale for these specific compliance levels and associated restrictions is based on practical experience by implementers gained since 2003. Level SF-0 is the most restrictive, but much existing geospatial data can be represented within its stated restrictions. Building servers and clients to compliance level SF-0 will create greater opportunity for interoperable data exchange, because of the reduced number of optional aspects permitted and the corresponding reduction in vendor-specific functionality likely to occur. Compliance level SF-1 has been found to be useful in projects requiring multivalued (non-spatial) properties of features. And compliance level SF-2 allows servers to host sophisticated information models without complicating the spatial properties beyond those allowed in levels SF-0 and SF-1. This level allows all Simple Features for SQL (SF-SQL) databases to represent any data they may have. The benefit of restricting the geometry model to the types included here, is to foster maximum interoperability of the geospatial location data. <xref target="compliance-level-capabilities-matrix"/> summarizes the capabilities of each compliance level.</p>
+	<table id="compliance-level-capabilities-matrix">
+(XML Line 000441): Hanging paragraph in clause
+	<clause id="_conventions" obligation="normative"><title>Conventions</title><definitions id="_abbreviated_terms" type="abbreviated_terms" obligation="normative">
+	<title>Abbreviated terms</title>
+	<p id="_07dd35a7-6917-4a9f-8ec4-92bb009319c5">Most of the abbreviated terms listed in sub-clause 5.1 of the Geography Markup Language (GML) Encoding Standard [OGC 07-036] and the OpenGIS® Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture [OGC 06-103r3] apply to this document.</p>
+	</definitions>
+	<clause id="_notations_used_in_xml_schema_fragments" obligation="normative"><title>Notations used in XML Schema fragments</title><p id="_6370498b-d591-4741-914d-5e8c9d2e4695">The following notations are used in XML Schema fragment presented in this document:</p>
+(XML Line 000500): Hanging paragraph in clause
+	<clause id="_usage_scenarios" obligation="normative"><title>Usage scenarios</title><clause id="_simple_desktop_or_browser_based_map_viewer" obligation="normative">
+	<title>Simple desktop or browser based map viewer</title>
+	<p id="_508ed4cd-6455-4f23-b380-e96929c2ca52">Allow users to select a collection of features for access and subsequent visualization by a client application.</p>
+	</clause>
+	<clause id="_get_a_collection_of_features_using_spatial_and_non_spatial_constraints" obligation="normative">
+(XML Line 000529): Hanging paragraph in clause
+	<clause id="schema-coding-patterns-common-to-all-compliance-levels" obligation="normative"><title>Schema coding patterns common to all compliance levels</title><clause id="_introduction_2" obligation="normative">
+	<title>Introduction</title>
+	<p id="_9ccd757b-7538-441e-b144-e107386cf3c2">This clause contains discussion and schema coding patterns that apply to all compliance levels defined in this profile.</p>
+	</clause>
+	<clause id="_schema_processing" obligation="normative"><title>Schema processing</title><p id="_8ede400e-f3fe-419f-a7de-0514a309bee5">Compliance to this profile can be viewed from two perspectives: from the perspective of application schema generators and the perspective of application schema consumers.</p>
+(XML Line 000553): Hanging paragraph in clause
+	<clause id="schema-coding-patterns-for-compliance-level-sf-0" obligation="normative"><title>Schema coding patterns for compliance level SF-0</title><clause id="_introduction_3" obligation="normative"><title>Introduction</title><p id="_0db6fb47-64de-4419-9259-19ae9fcfc42c">This clause describes a rigid coding pattern for GML application schemas that comply with level SF-0 of this profile. The main motivation behind this pattern is to limit the set of XML-Schema and GML capabilities that can be used to code a GML application schema. This in turn simplifies the task of building clients that can ingest schema documents that comply with this coding pattern and understand the structure of the feature types defined within.</p>
+	<p id="_e4bb4b56-698b-43b3-85e7-c5e6bdb9e45f">The schema fragments defined in the following sub-clauses shall be combined to create a complete GML application schema that complies to level SF-0 of this profile. The schema fragments shall be structurally encoded exactly as presented in the document. This means that all mandatory elements and attributes presented in the fragment shall be included as shown even if they are optional in XML-Schema. Furthermore, no other optional elements, attributes or facets that might be defined in XML-Schema or GML may be used unless specified in this document.</p>
+	<p id="_f46046dc-676b-441b-b88e-a07fe889a8d4">Please note that these requirements have absolutely nothing to do with the formatting of the XML fragments or the order in which elements or type definitions are declared. They are structural and syntactic requirements, not formatting requirements. White spaces can be used freely to format the generated schema documents in any way.</p></clause>
+	<clause id="root-element-encoding" obligation="normative"><title>Root element encoding</title><p id="_216ad9bc-3a9d-4d4d-a05c-e3d95b42f8a8">The following XML fragment shows how to encode the GML application schema document’s root element:</p>
+	<sourcecode id="_d79315d4-631a-4d9f-82ab-41d6f01ee703" unnumbered="true">1 &lt;xsd:schema
+(XML Line 000581): Hanging paragraph in clause
+	<clause id="importing-and-including-schemas" obligation="normative"><title>Importing and including schemas</title><clause id="_importing_the_gml_schema" obligation="normative"><title>Importing the GML schema</title><p id="_f7a94604-56f9-4a6c-85df-b8c1efacfd97">The following XML fragment imports the GML schema:</p>
+	<sourcecode id="_a889e4b1-269d-4373-bbdf-e7c8b2206c15" unnumbered="true">1 &lt;xsd:import namespace="http://www.opengis.net/gml/3.2"
+	2 schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/&gt;</sourcecode>
+	
+	<p id="_2dcce483-2044-4e15-85e9-d3ff2a2c710d">The value of the <strong>namespace</strong> attribute shall match the GML namespace declaration in the root element.</p>
+(XML Line 000599): Hanging paragraph in clause
+	<clause id="coding-pattern-for-feature-types" obligation="normative"><title>Coding pattern for feature types</title><clause id="_introduction_4" obligation="normative"><title>Introduction</title><p id="_d602aa10-fbaf-4a36-ad79-385049ed9e67">In GML, a feature is encoded as an XML element with the name of the feature-type. A property of a feature is also encoded as an XML element, whose name is the name of the property. This clause defines the XML-Schema and GML data types that may be used to declare elements that represent features and properties of features.</p>
+	<p id="_b3a7073b-fd7c-4269-9e2c-a12d2e7cad19">Following the GML lexical convention, this profile uses <em>UpperCamelCase</em> for the XML element names representing Objects or Feature Types, and <em>lowerCamelCase</em> for the XML element names representing properties. This provides a visual clue distinguishing the two “layers” within long XML documents with nested elements, and thus assists checking of the Object/property pattern by developers and users.</p></clause>
+	<clause id="defining-feature-collections" obligation="normative"><title>Defining feature collections</title><p id="_f566f1e0-7bea-446d-a93e-0c5a862819cc">The following XML-Schema fragment shows how to define a feature collection in a GML application schema that complies with level SF-0 of this profile:</p>
+	<sourcecode id="_6e8ce63e-dfca-420f-bc2e-ae95e277fb39" unnumbered="true">1 &lt;element name="FeatureCollectionName"
+	2               type="[prefix:]FeatureCollectionNameType"
+(XML Line 000654): Hanging paragraph in clause
+	<clause id="feature-property-encoding" obligation="normative"><title>Feature property encoding</title><clause id="feature-property-encoding-basic-data-types" obligation="normative"><title>Basic data types</title><p id="_ad792e0e-7ff0-4760-9003-339ec205d5a9">XML-Schema defines a rich set of basic data types that can be used to define XML documents. However, since data can originate from any number of sources (many having a different set of supported basic types), this document limits the set of available basic types for compliance level 0 to a smaller subset. The reasoning is that a smaller common set of supported basic data types is likely to be more interoperable.</p>
+	<p id="_7272d7c5-59d2-47c9-9d5d-17bac5444ac2">In addition to the GML geometric property types defined in Table 6, this profile supports the following list of basic data types:</p>
+	<ol id="_9b3d25ca-ab06-4841-9d38-3d3b8af34929" type="arabic">
+	<li>
+	<p id="_efaaa4ad-beb5-4ad1-80d9-c6688aebeac6">Integers (with optional specified value range and number of digits)</p>
+(XML Line 000842): Hanging paragraph in clause
+	<clause id="declaring-elements-with-string-content" obligation="normative"><title>Declaring elements with string content</title><clause id="basic-string" obligation="normative"><title>Basic string</title><p id="_ec5f7193-22b4-4e50-ac6f-fc495e0025ec">The following XML-Schema fragments show how to declare a property element with character string content:</p>
+	<sourcecode id="_d6f73b79-8e53-4070-b71f-691de6ae8a25" unnumbered="true">1 &lt;xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]&gt;
+	2   &lt;xsd:simpleType&gt;
+	3       &lt;xsd:restriction base="xsd:string"&gt;
+	4           &lt;xsd:maxLength value="nCharacters"/&gt;
+(XML Line 000942): Hanging paragraph in clause
+	<clause id="declaring-elements-with-geometric-content" obligation="normative"><title>Declaring elements with geometric content</title><clause id="_encoding_properties_with_geometric_content" obligation="normative"><title>Encoding properties with geometric content</title><p id="_158fc0f7-1130-4d95-894b-ec5868e7ea18">The following XML-Schema fragment shows how to declare a property element with
+	geometric content:</p>
+	<sourcecode id="_9b950a64-b36e-451e-a629-5ac61b81a06b" unnumbered="true">1 &lt;xsd:element name="propertyName"
+	2               type="gml_geometric_propertyType"
+	3               [minOccurs="0|1"] [maxOccurs="1"]&gt;</sourcecode>
+(XML Line 001179): Hanging paragraph in clause
+	<clause id="schema-coding-patterns-for-compliance-level-sf-1" obligation="normative"><title>Schema coding patterns for compliance level SF-1</title><clause id="schema-coding-patterns-for-compliance-level-sf-1-introduction" obligation="normative">
+	<title>Introduction</title>
+	<p id="_a47dd860-ce79-4291-a404-be58d385ee15">This clause describes a rigid coding pattern for GML application schemas that comply with level SF-1 of this profile. All the coding rules defined for compliance level SF-0, in <xref target="schema-coding-patterns-common-to-all-compliance-levels"/> and <xref target="schema-coding-patterns-for-compliance-level-sf-0"/>, apply to schemas that conform with level SF-1 except for the changes and additions noted in <xref target="changes-from-compliance-level-sf-0"/> and <xref target="additions-to-compliance-level-sf-0"/>.</p>
+	</clause>
+	<clause id="changes-from-compliance-level-sf-0" obligation="normative"><title>Changes from compliance level SF-0</title><clause id="changes-from-compliance-level-sf-0-basic-data-types" obligation="normative"><title>Basic data types</title><p id="_5fac574e-121a-406e-93d0-0baa1304f5a9">In additions to the basic data types listed in <xref target="feature-property-encoding"/>, schemas that comply with compliance level SF-1 of this profile also allow:</p>
+(XML Line 001183): Hanging paragraph in clause
+	<clause id="changes-from-compliance-level-sf-0" obligation="normative"><title>Changes from compliance level SF-0</title><clause id="changes-from-compliance-level-sf-0-basic-data-types" obligation="normative"><title>Basic data types</title><p id="_5fac574e-121a-406e-93d0-0baa1304f5a9">In additions to the basic data types listed in <xref target="feature-property-encoding"/>, schemas that comply with compliance level SF-1 of this profile also allow:</p>
+	<ol id="_1ccb1559-f5df-45d8-855e-b65d2e8c268f" type="arabic">
+	<li>
+	<p id="_d3388d56-bc64-4ab2-83b4-b0a0ecccabd3">User defined types composed of elements with spatial and non-spatial scalar types as defined in this profile</p>
+	</li>
+(XML Line 001285): Hanging paragraph in clause
+	<clause id="additions-to-compliance-level-sf-0" obligation="normative"><title>Additions to compliance level SF-0</title><clause id="additions-to-compliance-level-sf-0-introduction" obligation="normative"><title>Introduction</title><p id="_d8998dee-9869-4fea-b981-df5630cc2781">Application schemas that comply with level SF-0 can only declare, with the exception of geometric property types, feature properties that have simple or scalar values. For compliance level SF-1, the restriction is eased and conformant schemas are allowed to declare compound or complex valued feature properties. For example, the following schema fragment:</p>
+	<sourcecode id="_12000672-55a8-4f02-8313-72ccf94a293b" unnumbered="true">&lt;xsd:complexType name="IdentifierPropertyType"&gt;
+	    &lt;xsd:sequence&gt;
+	        &lt;xsd:element ref="fw:Identifier"/&gt;
+	    &lt;/xsd:sequence&gt;
+(XML Line 001335): Hanging paragraph in clause
+	<clause id="schema-coding-patterns-for-compliance-level-sf-2" obligation="normative"><title>Schema coding patterns for compliance level SF-2</title><clause id="schema-coding-patterns-for-compliance-level-sf-2-introduction" obligation="normative">
+	<title>Introduction</title>
+	<p id="_b4698446-9aa4-4552-b94a-0aaef1453ef3">Compliance level SF-2 is the least restrictive of the compliance levels defined in this profile and is intended to include all the feature encoding abilities provided by the OpenGIS® Simple Features Specification for SQL, Version 1.1 [1]. Unlike compliance levels SF-0 and SF-1, application schemas that comply with compliance level SF-2 have no restrictions whatsoever placed on non-spatial properties. Spatial properties, however, are limited to the set of geometric property types supported by compliance levels SF-0 and SF-1 with the caveats noted in this clause.</p>
+	</clause>
+	<clause id="changes-from-compliance-levels-sf-0-and-sf-1" obligation="normative">
+(XML Line 001343): Hanging paragraph in clause
+	<annex id="annex-compliance-testing" obligation="normative"><title>Compliance testing</title><clause id="annex-subsec-introduction-level-sf0-sf1-sf2" obligation="normative"><title>Introduction (Level SF-0, SF-1, SF-2)</title><p id="_516d7e2c-c2aa-4fb3-8fe0-e9e9d903c87d">This annex outlines how a GML application schema can be tested for compliance with this profile.</p>
+	<p id="_02425f46-d43e-49dc-82e6-1f6b305d9162">It is assumed that a method exists for lexically scanning the application schema being tested in order to access all the elements and attributes contained therein.</p>
+	<p id="_5b53c22f-1250-46a0-8a1a-763328558434">The following description is only concerned with interpreting the schema definition in order to ascertain if the schema is compliant with this profile.</p>
+	<p id="_469c6666-db77-4d1e-9408-b22d886b3d5f">The best way to test a GML application schema for compliance to this profile is to build an XML-Schema interpreter that checks all the elements and attributes defined in the application schema for compliance.</p>
+	<p id="_c7d436dd-c2f1-45e9-ad36-89fea89d9709">The following clauses present each of the XML-Schema pattern templates defined in this profile and describe how to test them for compliance. Every effort has been made to ensure that the schema fragments presented in this annex match those in the main body of this profile. If, however, a discrepancy is found then the fragments in the main body of this profile should be considered normative.</p></clause>
+(XML Line 001577): Hanging paragraph in clause
+	<clause id="annex-subsec-feature-collections-level-sf0-sf1" obligation="normative"><title>Feature collections (Level SF-0, SF-1)</title><clause id="_element_declaration" obligation="normative"><title>Element declaration</title><p id="_0ed33acb-c100-42d3-aca0-f3a97e729422">A compliant application schema shall define one or more feature types by defining one or more global elements for those feature types.</p>
+	<p id="_9650cf3b-bcfb-4a1c-b297-03d4ee83dd43">The following XML-Schema fragment defines the global element for a feature type:</p>
+	<sourcecode id="_f257102a-2469-4f2d-af1e-8854d7c6c161" unnumbered="true">1 &lt;element name="FeatureCollectionName"
+	2           type="[prefix:]FeatureCollectionNameType"
+	3           substitutionGroup="gml:AbstractGML"/&gt;</sourcecode>
+(XML Line 001758): Hanging paragraph in clause
+	<clause id="feature-types-level-sf-0-sf-1-sf-2" obligation="normative"><title>Feature types (Level SF-0, SF-1, SF-2)</title><clause id="feature-types-level-sf-0-sf-1-sf-2-element-declaration" obligation="normative"><title>Element declaration</title><p id="_c4f722df-4140-480a-bc49-4cd97e930d0d">A compliant application schema shall define one or more feature types by defining one or more global elements for those feature types.</p>
+	<p id="_171a37cc-016a-4ce1-9727-28897c61d9c9">The following XML-Schema fragment defines the global element for a feature type:</p>
+	<sourcecode id="_37e54365-daf2-47a3-bf53-cf0f2803798f" unnumbered="true">1 &lt;xsd:element name="FeatureTypeName"
+	2               type="prefix:FeatureTypeNameType"
+	3               substitutionGroup="gml:AbstractFeature"/&gt;</sourcecode>
+(XML Line 001879): Hanging paragraph in clause
+	<clause id="_properties" obligation="normative"><title>Properties</title><clause id="annex-subsec-integer-valued-properties-level-sf0-sf1" obligation="normative"><title>Integer valued properties (Level SF-0, SF-1)</title><p id="_cfad2bb0-c18b-4fac-94f3-97e2f4dce641">Each integer-valued property shall be defined using the following XML-Schema fragments:</p>
+	<p id="_2cfe56f2-ac7d-43a8-922b-49e2ea4f83bf">SHORT FORM</p>
+	<sourcecode id="_258e3d10-f50f-4d88-b5c2-e67132b39a55" unnumbered="true">1 &lt;xsd:element name="propertyName" type="xsd:integer"
+	2              [minOccurs="0|N"] [maxOccurs="1|N|unbounded"][nillable="true|false"]/&gt;</sourcecode>
+	
+(XML Line 003432): Hanging paragraph in clause
+	<clause id="complex-value-properties-level-sf-1" obligation="normative"><title>Complex-value properties (Level SF-1)</title><clause id="complex-value-properties-level-sf-1-introduction" obligation="normative">
+	<title>Introduction</title>
+	<p id="_5b68cdab-92ec-4263-a562-7a24df683acc">The pattern described here following GML object-property rule, which necessitates the element nesting, described in this clause.</p>
+	</clause>
+	<clause id="_user_defined_property_declaration" obligation="normative"><title>User defined property declaration</title><p id="_ec19ebef-bdff-4c55-a422-89f5f32739a7">The following pattern declares a property of a feature of user-defined type:</p>
+(XML Line 003948): Hanging paragraph in clause
+	<annex id="annex-examples" obligation="informative"><title>Examples</title><clause id="_news_item_example" obligation="informative"><title>News item example</title><p id="_f8ce738c-3519-43db-b823-cc9e78d4416a">The following is a GML application schema that defines two features types, <em>Reporter</em> and <em>NewsItem</em> and complies with the coding patterns described in this document:</p>
+	<sourcecode id="_ab330a56-0b7a-4807-a054-226bc51b1594" unnumbered="true">&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+	&lt;schema
+	    targetNamespace="http://www.cubewerx.com/cw"
+	    xmlns:cw="http://www.cubewerx.com/cw"
+
+
+== Metanorma XML Syntax
+
+(XML Line 000082:34): multiple definitions of "DocumentSubtype" without "combine" attribute

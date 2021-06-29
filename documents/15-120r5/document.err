@@ -1,0 +1,69 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/15-120r5/document.err errors
+
+
+== AsciiDoc Input
+
+(ID annex-references): Section not marked up as [bibliography]!
+	#<Asciidoctor::Section@47323743683640 {level: 1, title: "B. References", blocks: 2}>
+
+
+== Style
+
+(): Preface is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000135): Table should have title
+	<table id="_08fa9e84-3c42-443a-83c0-07d522d3101e" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Name</th>
+	<th valign="top" align="left">Affiliation</th>
+(XML Line 000311): Hanging paragraph in clause
+	<clause id="_background_and_informative_material" obligation="normative"><title>Background and informative material</title><clause id="_intended_audience" obligation="normative">
+	<title>Intended Audience</title>
+	<p id="_d5606b31-6fc8-4fd4-988a-590cab0ed8a0">The primary audience for the CDB standard includes distributed simulation system developers and synthetic environment database tool developers whose applications are intended to read and/or write synthetic environment database files. To this end, this document discusses concepts incorporated in the standard and contains a detailed description of the physical layout of the files as represented on disk.</p>
+	</clause>
+	<clause id="_problem_definition" obligation="normative"><title>Problem Definition</title><p id="_37bfeaaf-9285-4d5d-bb25-8f2cfc730222">Complex mission simulators include a wide range of subsystems designed to simulate onboard equipment and to provide a rich gaming environment complete with weather, computer generated forces, ordnance, air traffic, networked players, etc. Each of these subsystems traditionally utilizes a proprietary runtime database (and format) for its synthetic representation of the gaming area. These application-specific formats have been generated off-line at a database generation facility using a variety of tools and processes. This traditional approach to simulation has several inherent disadvantages, including length of time needed for synthetic environment production for multiple simulation applications, loss of correlation due to compilation differences, complexity in configuration management, and an inefficient update process. The abundance of distinct database formats creates several challenges for configuration management, resulting in mismatched correlations, and in the increased timeline needed to generate these databases. The CDB Standard specifies an approach that establishes conventions for all simulator client subsystems (aka simulator client-devices). Further, the CDB Best Practices provide detailed guidance on how to use a set of industry-standard formats.</p>
+(XML Line 000465): Hanging paragraph in clause
+	<clause id="_key_benefits_of_the_cdb_standard" obligation="normative"><title>Key Benefits of the CDB Standard</title><p id="_c1addf4b-e55b-4058-b0a4-769286283f2c">The following outline the key benefits of using the CDB standard.</p>
+	<clause id="_improved_synthetic_environment_data_store_please_note_that_in_earlier_versions_of_the_cdb_standard_that_the_acronym_db_was_used_as_db_cases_confusion_regarding_whether_cdb_defines_a_database_or_not_the_ogc_cdb_standard_uses_the_term_data_store_however_for_the_sake_of_backwards_compatibility_the_use_of_db_remains_in_this_document_db_generation_timeline" obligation="normative"><title>Improved Synthetic environment Data Store<fn reference="10"><p id="_03b25587-33af-41c7-a881-6a222a03ac8d">Please note that in earlier versions of the CDB standard that the acronym “DB” was used. As DB cases confusion regarding whether CDB defines a database or not, the OGC CDB standard uses the term “data store”. However, for the sake of backwards compatibility, the use of DB remains in this document.</p></fn> (DB) Generation Timeline</title><p id="_6a894980-2d8d-4576-ab44-7a7025edfbb6">Important reductions in both the DB generation and DB update timeline are expected from an implementation of the CDB standard because of the following.</p>
+	<ol id="_3c503118-1fa4-4aea-b4b4-17708d4f0349" type="arabic">
+	<li>
+	<p id="_3c177f21-a192-47de-925a-d26f74547112">There is no need to compile distinct synthetic environment runtime data stores for each of the simulator client-devices.</p>
+(XML Line 000519): Hanging paragraph in clause
+	<clause id="_cdb_model_overview" obligation="normative"><title>CDB Model Overview</title><p id="_ae907037-6f6b-4da8-83e8-0be6da65b328">The following sections provide a general description and focus of the CDB standard.</p>
+	<clause id="_cdb_standard_data_representation_and_organization" obligation="normative"><title>CDB Standard Data Representation and Organization</title><p id="_2fabdb52-57e8-43a1-9e5f-193ed9dfc292">The CDB standard provides the means of describing all feature sets relevant to simulation (such as terrain and 3D objects). These feature sets are logical re-groupings of datasets that are used directly by the simulator client-devices.</p>
+	<p id="_8be63122-60b2-4343-869b-601ebe427a16">The standard currently supports the following representations.</p>
+	<ol id="_1710947a-56b0-4605-8de5-6f225bd93653" type="arabic">
+	<li>
+(XML Line 000567): Hanging paragraph in clause
+	<clause id="_tilelayerlevel_of_detail_structure" obligation="normative"><title>Tile/Layer/Level-of-Detail Structure</title><p id="_0324365d-d412-4367-a1ac-8a994ce52e93">The CDB standard offers a structure that is well suited for the efficient access of its contents. To this end, it relies on three important means to organize the synthetic environment data:</p>
+	<ul id="_194cc17c-5df4-4293-af26-f74edaaaf053">
+	<li>
+	<p id="_61e03236-3a64-45b2-8b88-dc6853c8a15e">Tiles</p>
+	</li>
+(XML Line 000596): Hanging paragraph in clause
+	<clause id="_cdb_structure_organization_on_media_and_conventions" obligation="normative"><title>CDB Structure, Organization on Media and Conventions</title><p id="_23cfcc90-053b-4d7c-b855-3bf385fe5e11">This CDB standard along with the CDB Best Practices describes the data content, representation, as well as the logical organization of the data stored in the data store:</p>
+	<ol id="_32e1e774-6e33-4640-8d91-04bc74b226bd" type="arabic">
+	<li>
+	<p id="_4fb5f270-4377-4027-95ee-8121a864635b">The Data store structure comprises all of the data structures used to access data store content (such as file paths, Level-of-Detail (LOD), lists) to speed up access, information layering, versioning and configuration management; and</p>
+	</li>
+(XML Line 000652): Table should have title
+	<table id="_3c769701-0da6-4dfc-844e-55ab8c0fc8a2" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Date</th>
+	<th valign="top" align="left">Release</th>
+(XML Line 000730): Table should have title
+	<table id="_a06ef639-bd08-4347-9f53-e104e5369268" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Re</th>
+	<th valign="top" align="left">Title</th>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000082:34): multiple definitions of "DocumentSubtype" without "combine" attribute

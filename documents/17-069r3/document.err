@@ -1,0 +1,160 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/17-069r3/document.err errors
+
+
+== AsciiDoc Input
+
+(ID _bibliography): Section not marked up as [bibliography]!
+	#<Asciidoctor::Section@47323764642520 {level: 1, title: "C. Bibliography", blocks: 1}>
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000247): Table should have title
+	<table id="_4db62734-d6e0-4a73-ade8-c9fea729238b" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Name</th>
+	<th valign="top" align="left">Affiliation</th>
+(XML Line 000538): Hanging paragraph in clause
+	<clause id="_conventions" obligation="normative"><title>Conventions</title><clause id="_identifiers" obligation="normative"><title>Identifiers</title><p id="_c54629b3-d493-4b27-b733-532ab6dbf474">The normative provisions in this standard are denoted by the URI <link target="http://www.opengis.net/spec/ogcapi-features-1/1.0"/>.</p>
+	<p id="_6769b807-4797-4d4b-96bc-35694220bf00">All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p></clause>
+	<clause id="_link_relations" obligation="normative"><title>Link relations</title><p id="_2c79eb15-e907-4578-add3-99dcc5bcb101">To express relationships between resources, <eref type="inline" bibitemid="rfc8288" citeas="IETF RFC 8288">RFC 8288 (Web Linking)</eref> is used.</p>
+	<p id="_e9ec4209-5133-44ea-a5ea-7cbb22fb45b3">The following <eref type="inline" bibitemid="link_relations" citeas="[3]">registered link relation types</eref> are used in this document.</p>
+	<ul id="_fcb09a1a-8a36-4ef1-8cf2-0a3934f6f975">
+(XML Line 000605): Hanging paragraph in clause
+	<clause id="_api_definition" obligation="normative"><title>API definition</title><clause id="_general_remarks" obligation="normative"><title>General remarks</title><p id="_3fee5744-4ad1-4a1c-8407-1e3128c87df7">Good documentation is essential for every API so that developers can more easily learn how to use the API. In the best case, documentation will be available in HTML and in a format that can be processed by software to connect to the API.</p>
+	<p id="_33055720-857e-41d7-b785-5c4d6b5bf06c">This standard specifies requirements and recommendations for APIs that share feature data and that want to follow a standard way of doing so. In general, APIs will go beyond the requirements and recommendations stated in this standard — or other parts of the OGC API family of standards — and will support additional operations, parameters, etc. that are specific to the API or the software tool used to implement the API.</p></clause>
+	<clause id="_role_of_openapi" obligation="normative"><title>Role of OpenAPI</title><p id="_696209a7-c335-463b-a0a4-1db03604fb07">This document uses OpenAPI 3.0 fragments as examples and to formally state requirements. However, using OpenAPI 3.0 is not required for implementing a server.</p>
+	<p id="_c701280e-5a16-4a8b-a22e-4048078659aa">Therefore, the <em>Core</em> requirements class only requires that an API definition is provided and linked from the landing page.</p>
+	<p id="_1fe60503-e025-46b1-a93b-f1ef5c48c435">A separate requirements class is specified for API definitions that follow the <xref target="rc_oas30">OpenAPI specification 3.0</xref>. This does not preclude that in the future or in parallel other versions of OpenAPI or other API descriptions are provided by a server.<note id="_630efc66-7b2f-42bc-b9df-71634190fd11">
+(XML Line 000647): Hanging paragraph in clause
+	<clause id="overview_cl6" obligation="normative"><title>Overview</title><clause id="_design_considerations" obligation="normative"><title>Design considerations</title><p id="_55e935a5-890a-4398-aa9f-198289339529">While this is the first version of the OGC API Features series, the fine-grained access to features over the Web has been supported by the <eref type="inline" bibitemid="wfs20" citeas="OGC 09-025r2">OGC Web Feature Service (WFS)</eref> standard (in ISO: <eref type="inline" bibitemid="iso19142" citeas="ISO 19142:2010">ISO 19142</eref>) and many implementations of that standard for many years. WFS uses a Remote-Procedure-Call-over-HTTP architectural style using XML for any payloads. When the WFS standard was originally designed in the late 1990s and early 2000s this was the state-of-the-art.</p>
+	<p id="_21ea942a-71c4-4ae4-9949-831e5f4f30f4">OGC API Features supports similar capabilities, but using a modernized approach that follows the current Web architecture and in particular the <eref type="inline" bibitemid="spatial_data_wbp" citeas="NOTE-sdw-bp-20170928">W3C/OGC best practices for sharing Spatial Data on the Web</eref> as well as the <eref type="inline" bibitemid="dwbp" citeas="REC-dwbp-20170131">W3C best practices for sharing Data on the Web</eref>.</p>
+	<p id="_ff9079b7-a4f6-49c8-8b2b-27203ea606a0">Beside the general alignment with the architecture of the Web (e.g., consistency with HTTP/HTTPS, hypermedia controls), another goal for OGC API Features is modularization. This goal has several facets, as described below.</p>
+	<ul id="_50ae9c04-8ade-4caa-a542-6d74efb623f8">
+	<li>
+(XML Line 000691): Hanging paragraph in clause
+	<clause id="rc_core" obligation="normative"><title>Requirements Class “Core”</title><clause id="overview" obligation="normative"><title>Overview</title><requirement id="core" obligation="requirement" type="class">
+	<label>http://www.opengis.net/spec/ogcapi-features-1/1.0/req/core</label>
+	<subject>Web API</subject><inherit><eref type="inline" bibitemid="rfc2616" citeas="IETF RFC 2616">RFC 2616 (HTTP/1.1)</eref></inherit><inherit><eref type="inline" bibitemid="rfc2818" citeas="IETF RFC 2818">RFC 2818 (HTTP over TLS)</eref></inherit><inherit><eref type="inline" bibitemid="rfc3339" citeas="IETF RFC 3339">RFC 3339 (Date and Time on the Internet: Timestamps)</eref></inherit><inherit><eref type="inline" bibitemid="rfc8288" citeas="IETF RFC 8288">RFC 8288 (Web Linking)</eref></inherit><description>
+	<p id="_ebaac682-7cbd-48e0-928b-9ca98c57f8d5">
+	
+(XML Line 000754): Hanging paragraph in clause
+	<clause id="api_landing_page" obligation="normative"><title>API landing page</title><clause id="_operation" obligation="normative">
+	<title>Operation</title>
+	<requirement id="req_core_root_op">
+	<label>/req/core/root-op</label>
+	<requirement id="_eb47479e-de91-4acb-9bdd-cda775d0eb06"><description>
+(XML Line 000815): Hanging paragraph in clause
+	<clause id="_api_definition_2" obligation="normative"><title>API definition</title><clause id="_operation_2" obligation="normative"><title>Operation</title><p id="_ec6c2c37-44f8-4146-be90-e26403c3d755">Every API is expected to provide a definition that describes the capabilities of the server and which can be used by developers to understand the API, by software clients to connect to the server, or by development tools to support the implementation of servers and clients.</p>
+	<requirement id="req_core_api_definition_op">
+	<label>/req/core/api-definition-op</label>
+	<requirement id="_e00655d1-500b-457f-b5d2-134facb1d33b"><description>
+	<p id="_8d35a056-40bc-499d-972f-37133006727d">The URIs of all API definitions referenced from the landing page SHALL support the HTTP GET method.</p>
+(XML Line 000848): Hanging paragraph in clause
+	<clause id="declaration_of_conformance_classes" obligation="normative"><title>Declaration of conformance classes</title><clause id="_operation_3" obligation="normative"><title>Operation</title><p id="_d8a59941-d7d4-45a1-ae90-1ad527568bee">To support “generic” clients that want to access multiple OGC API Features implementations — and not “just” a specific API / server, the server has to declare the conformance classes it implements and conforms to.</p>
+	<requirement id="req_core_conformance_op">
+	<label>/req/core/conformance-op</label>
+	<requirement id="_142996b4-3dd7-4f04-b210-f6d7223432ea"><description>
+	<p id="_f9980032-c462-4eb8-bd2d-9f8074808d95">The server SHALL support the HTTP GET operation at the path <tt>/conformance</tt>.</p>
+(XML Line 000887): Hanging paragraph in clause
+	<clause id="http_1_1" obligation="normative"><title>HTTP 1.1</title><requirement id="req_core_http"><label>/req/core/http</label><requirement id="_641753e7-6fbd-4113-b212-ca9faa775e39"><description>
+	<p id="_1f1d9174-f72b-48b8-8bc7-2605d21ab9b8">The server SHALL conform to <eref type="inline" bibitemid="rfc2616" citeas="IETF RFC 2616">HTTP 1.1</eref>.</p>
+	</description></requirement>
+	<requirement id="_f8d189fb-7cfd-45e6-8860-76255bf533c7"><description>
+	<p id="_c1905cdb-75b3-4bb4-a836-936b3485aeec">If the server supports HTTPS, the server SHALL also conform to <eref type="inline" bibitemid="rfc2818" citeas="IETF RFC 2818">HTTP over TLS</eref>.</p>
+(XML Line 001082): Hanging paragraph in clause
+	<clause id="feature_collections" obligation="normative"><title>Feature collections</title><clause id="_operation_4" obligation="normative">
+	<title>Operation</title>
+	<requirement id="req_core_fc_md_op">
+	<label>/req/core/fc-md-op</label>
+	<requirement id="_ab345e21-885d-4a9b-9070-56b739e3a08d"><description>
+(XML Line 001380): Hanging paragraph in clause
+	<clause id="feature_collection" obligation="normative"><title>Feature collection</title><clause id="_operation_5" obligation="normative">
+	<title>Operation</title>
+	<requirement id="req_core_sfc_md_op"><label>/req/core/sfc-md-op</label><requirement id="_d9d92ab1-1346-4de0-9c68-a58a1b3b59fe"><description>
+	<p id="_7672eaf5-b911-4f89-b7c7-2d9cf588df93">The server SHALL support the HTTP GET operation at the path <tt>/collections/{collectionId}</tt>.</p>
+	</description></requirement>
+(XML Line 001400): Hanging paragraph in clause
+	<clause id="features" obligation="normative"><title>Features</title><clause id="_operation_6" obligation="normative">
+	<title>Operation</title>
+	<requirement id="req_core_fc_op"><label>/req/core/fc-op</label><requirement id="_d05c22d5-099b-4cda-a5d9-b330342ad2fe"><description>
+	<p id="_c2dab659-a70c-4646-aa20-6c154f88d681">For every feature collection identified in the feature collections response (path <tt>/collections</tt>), the server SHALL support the HTTP GET operation at the path <tt>/collections/{collectionId}/items</tt>.</p>
+	</description></requirement>
+(XML Line 001749): Hanging paragraph in clause
+	<clause id="feature" obligation="normative"><title>Feature</title><clause id="_operation_7" obligation="normative"><title>Operation</title><requirement id="req_core_f_op"><label>/req/core/f-op</label><requirement id="_44dbda67-c94c-46a5-a29c-f6cda96fe67a"><description>
+	<p id="_74e99e50-06b9-406b-88bf-917376ab03ac">For every feature in a feature collection (path <tt>/collections/{collectionId}</tt>), the server SHALL support the HTTP GET operation at the path <tt>/collections/{collectionId}/items/{featureId}</tt>.</p>
+	</description></requirement>
+	<requirement id="_887264ca-c6e7-48bb-bf79-9751f427c695"><description>
+	<p id="_0fd32c01-de10-4952-a7a1-8de18b6b0dd9">The parameter <tt>collectionId</tt> is each <tt>id</tt> property in the feature collections response (JSONPath: <tt>$.collections[*].id</tt>). <tt>featureId</tt> is a local identifier of the feature.</p>
+(XML Line 001793): Hanging paragraph in clause
+	<clause id="_requirements_classes_for_encodings" obligation="normative"><title>Requirements classes for encodings</title><clause id="_overview" obligation="normative"><title>Overview</title><p id="_c0dfc3a8-3b17-4bca-9e1e-58ce659ac9c7">This clause specifies four pre-defined requirements classes for encodings to be used by a OGC API Features implementation. These encodings are commonly used encodings for spatial data on the web:</p>
+	<ul id="_217b3cc8-93dc-4524-8d84-a6e2bb04b1fc">
+	<li>
+	<p id="_da1ebb81-1f39-4f73-92ad-4e6e4695f491">
+	<xref target="rc_html">HTML</xref>
+(XML Line 002136): Hanging paragraph in clause
+	<clause id="_requirements_class_openapi_3_0" obligation="normative"><title>Requirements class “OpenAPI 3.0”</title><clause id="two_approaches_oas" obligation="normative"><title>Basic requirements</title><p id="_9b2738eb-4049-4f06-b4e0-087011ce0c7c">Servers conforming to this requirements class define their API by an <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasDocument">OpenAPI Document</link>.</p>
+	<requirement id="rc_oas30" obligation="requirement" type="class">
+	<label>http://www.opengis.net/spec/ogcapi-features-1/1.0/req/oas30</label>
+	<subject>Web API</subject><inherit><xref target="core">Conformance Class “Core”</xref></inherit><inherit><eref type="inline" bibitemid="openapi" citeas="OpenAPI Specification, version 3.0">OpenAPI Specification 3.0.2</eref></inherit><description>
+	<p id="_ee3498c3-b9f3-4b09-a801-22943fa8efe0">
+(XML Line 002244): Hanging paragraph in clause
+	<clause id="_security_considerations" type="security" obligation="informative"><title>Security Considerations</title><p id="_f5510b4c-97f4-4945-b8b6-ce1568c3c318">A Web API is a powerful tool for sharing information and analysis resources. It also provides many avenues for unscrupulous users to attack those resources. Designers and developers of Web APIs should be familiar with the potential vulnerabilities and how to address them.</p>
+	<p id="_b61a44e5-008e-4b7b-b206-da9507bb0a66">A valuable resource is the Common Weakness Enumeration (CWE) registry at <link target="http://cwe.mitre.org/data/index.html"/>. The CWE is organized around three views; Research, Architectural, and Development.</p>
+	<ul id="_0716b9b1-ab9d-4088-90e8-e58653ecb8a8">
+	<li>
+	<p id="_9648777a-a80e-49df-a552-aeaed3c9d743"><strong>Research:</strong> facilitates research into weaknesses and can be leveraged to systematically identify theoretical gaps within CWE.</p>
+(XML Line 002289): Hanging paragraph in clause
+	<annex id="_abstract_test_suite" obligation="normative"><title>Abstract Test Suite</title><clause id="_introduction" obligation="normative">
+	<title>Introduction</title>
+	<p id="_4973c2da-599b-4604-af4a-21a0c8eec23c">OGC API Features is not a Web Service in the traditional sense. Rather, it defines the behavior and content of a set of Resources exposed through a Web Application Programing Interface (Web API). Therefore, an API may expose resources in addition to those defined by the standard. A test engine must be able to traverse the API, identify and validate test points, and ignore resource paths which are not to be tested.</p>
+	</clause>
+	<clause id="_conformance_class_core" obligation="normative"><title>Conformance Class Core</title><requirement id="_f50844f6-64ad-4879-8682-850b0fbe10d3" type="conformanceclass">
+(XML Line 002293): Hanging paragraph in clause
+	<clause id="_conformance_class_core" obligation="normative"><title>Conformance Class Core</title><requirement id="_f50844f6-64ad-4879-8682-850b0fbe10d3" type="conformanceclass">
+	<label>http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core</label>
+	<subject>Web API</subject>
+	</requirement>
+	<clause id="_general_tests" obligation="normative"><title>General Tests</title><clause id="_http" obligation="normative">
+(XML Line 002298): Hanging paragraph in clause
+	<clause id="_general_tests" obligation="normative"><title>General Tests</title><clause id="_http" obligation="normative">
+	<title>HTTP</title>
+	<requirement id="_acd0c1dd-3bb1-443d-aee2-a1e581ab5ca4" type="abstracttest"><label>/ats/core/http</label><requirement id="_ed8e29f3-313e-4aac-9cf3-17d43a90a45a" type="abstracttest">
+	<label>Test Purpose</label><description>
+	<p id="_e3aa2867-187d-4363-b0f4-ad05631cb909">/ats/core/http</p>
+(XML Line 003179): Hanging paragraph in clause
+	<clause id="_conformance_class_geojson" obligation="normative"><title>Conformance Class GeoJSON</title><requirement id="_f6ee1aab-3bf2-4918-a52e-2e24e5e30120" type="conformanceclass">
+	<label>http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson</label>
+	<subject>Web API</subject>
+	</requirement>
+	<clause id="_geojson_definition" obligation="normative">
+(XML Line 003241): Hanging paragraph in clause
+	<clause id="_conformance_class_gml_simple_features_level_0" obligation="normative"><title>Conformance Class GML Simple Features Level 0</title><requirement id="_ad6cf8c3-88d1-4365-938d-f7db2a164ea7" type="conformanceclass">
+	<label>http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf0</label>
+	<subject>Web API</subject>
+	</requirement>
+	<clause id="_gml_simple_features_0_definition" obligation="normative">
+(XML Line 003290): Hanging paragraph in clause
+	<clause id="_conformance_class_gml_simple_features_level_2" obligation="normative"><title>Conformance Class GML Simple Features Level 2</title><requirement id="_f2dd1a80-ca37-4336-8fdf-c0b813298769" type="conformanceclass">
+	<label>http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf2</label>
+	<subject>Web API</subject>
+	</requirement>
+	<clause id="_gml_simple_features_2_definition" obligation="normative">
+(XML Line 003339): Hanging paragraph in clause
+	<clause id="_conformance_class_html" obligation="normative"><title>Conformance Class HTML</title><requirement id="_7a22be16-d995-44f2-90ac-b4a328a3503e" type="conformanceclass">
+	<label>http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html</label>
+	<subject>Web API</subject>
+	</requirement>
+	<clause id="_html_definition" obligation="normative">
+(XML Line 003497): Table should have title
+	<table id="_104bf1ce-6a3a-407e-bf6f-57725129a2f2" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Date</th>
+	<th valign="top" align="left">Release</th>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000082:34): multiple definitions of "DocumentSubtype" without "combine" attribute
